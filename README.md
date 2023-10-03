@@ -24,7 +24,7 @@ You will need to have the following:
 
 1. Clone the repository
 ```
-git clone https://github.com/MahdeenSky/AnimeNotificationDiscordBot
+git clone https://github.com/mehulverma26/anime-notification-discord-bot
 ```
 2. Navigate to the project directory
 ```
