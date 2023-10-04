@@ -6,10 +6,12 @@ from threading import Timer
 
 os.chdir(os.path.dirname(__file__))
 
+
 class jsonOP:
     """
     Class for JSON operations
     """
+
     def __init__(self, JSONFILENAME: str):
         self.json = JSONFILENAME
         if not os.path.exists(self.json):
@@ -17,7 +19,6 @@ class jsonOP:
             self.saveJSON(self.data)
         else:
             self.data = self.loadJSON()
-
 
     def saveJSON(self, data):
         """
@@ -36,7 +37,7 @@ class jsonOP:
 
 
 def print_bot(message):
-        print(f"[{current_time()}] **Bot**: {message}")
+    print(f"[{current_time()}] **Bot**: {message}")
 
 
 def current_time():
