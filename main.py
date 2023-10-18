@@ -154,7 +154,7 @@ def episodeEmbedCard(anime_id, episode_number, video_link, airing=True):
 
     embed = Embed(title=anime["title"], description=description, color=0x00FF00)
     embed.set_thumbnail(url=anime["images"]["jpg"]["image_url"])
-    embed.set_footer(text="by DeveloperRahul")
+    embed.set_footer(text="Watching anime")
     embed.set_image(url=anime["images"]["jpg"]["image_url"])
     embed.add_field(
         name="MyAnimeList",
