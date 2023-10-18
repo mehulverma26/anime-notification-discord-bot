@@ -247,9 +247,21 @@ def animeSelectionRemoveEmbed(anime_titles):
 async def help(interaction: disnake.ApplicationCommandInteraction):
     embed = disnake.Embed(title="Help", color=disnake.Color.blue())
     embed.add_field(name="help (displays this message)", value="/help", inline=False)
-    embed.add_field(name="add anime", value="/addanime", inline=False)
-    embed.add_field(name="remove anime", value="/removeanime", inline=False)
-    embed.add_field(name="list anime", value="/listanime", inline=False)
+    embed.add_field(
+        name="add anime <name of the anime> (adds the anime)",
+        value="/addanime",
+        inline=False,
+    )
+    embed.add_field(
+        name="remove anime (removes the anime)",
+        value="/removeanime",
+        inline=False,
+    )
+    embed.add_field(
+        name="list anime (lists the anime in the list)",
+        value="/listanime",
+        inline=False,
+    )
     await interaction.response.send_message(embed=embed)
 
 
